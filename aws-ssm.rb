@@ -4,13 +4,13 @@
 class AwsSsm < Formula
   desc "Native Golang CLI tool for managing AWS SSM sessions"
   homepage "https://github.com/johnlam90/aws-ssm"
-  version "0.8.0"
+  version "0.8.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/johnlam90/aws-ssm/releases/download/v0.8.0/aws-ssm-darwin-amd64.tar.gz"
-      sha256 "235960621937152788dc172500afa3430f04cbbe200cfe0d8e3e8f3d3853e255"
+      url "https://github.com/johnlam90/aws-ssm/releases/download/v0.8.1/aws-ssm-darwin-amd64.tar.gz"
+      sha256 "859dd5dd296e6fc876d2089833778a640308995b7fb806cd2cf5313ba3007af0"
 
       def install
         bin.install "aws-ssm-darwin-amd64" => "aws-ssm"
@@ -18,8 +18,8 @@ class AwsSsm < Formula
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/johnlam90/aws-ssm/releases/download/v0.8.0/aws-ssm-darwin-arm64.tar.gz"
-      sha256 "76617b22845e35d8251cc66eb7caa3dcf7dca6071682a6f7f3813445014e1f92"
+      url "https://github.com/johnlam90/aws-ssm/releases/download/v0.8.1/aws-ssm-darwin-arm64.tar.gz"
+      sha256 "ac341680432866454402d0e2bf376e19c2256e4b10750c9acec1bf9ce5a2ddbc"
 
       def install
         bin.install "aws-ssm-darwin-arm64" => "aws-ssm"
@@ -29,8 +29,8 @@ class AwsSsm < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/johnlam90/aws-ssm/releases/download/v0.8.0/aws-ssm-linux-amd64.tar.gz"
-      sha256 "c459226f347229833eb7027219eab12c94db7d31193a4e665e37d686294a522b"
+      url "https://github.com/johnlam90/aws-ssm/releases/download/v0.8.1/aws-ssm-linux-amd64.tar.gz"
+      sha256 "53786e8986ea47b79c2587082930f459833d6f903534ab92bfa8f63d15a9e839"
 
       def install
         bin.install "aws-ssm-linux-amd64" => "aws-ssm"
@@ -38,8 +38,8 @@ class AwsSsm < Formula
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/johnlam90/aws-ssm/releases/download/v0.8.0/aws-ssm-linux-arm64.tar.gz"
-      sha256 "42f6f71e7e1b2332773ea42de95afa733988c87c93d040fa6e24b28faa118504"
+      url "https://github.com/johnlam90/aws-ssm/releases/download/v0.8.1/aws-ssm-linux-arm64.tar.gz"
+      sha256 "11d6626c8087f6aaae6ebc055144cbdea86abbc89cedf5d1fa7eff73c485174c"
 
       def install
         bin.install "aws-ssm-linux-arm64" => "aws-ssm"
